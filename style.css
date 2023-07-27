@@ -1,0 +1,584 @@
+
+
+ 
+
+* ,
+*::before ,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: url(windowsdesk.jpg);
+    background-size:cover;
+   
+    background-repeat: no-repeat;
+}
+/*
+
+.container{
+  display: flex;
+    min-height: 100vh;
+    
+
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+}*/
+.container{
+    display: flex;
+    flex-direction: column;
+
+    align-content: center;
+    justify-content: flex-end;
+    min-height: 100vh;
+    flex-wrap: wrap
+}
+.main-container{
+    width: 25%;
+    height: 6vh;
+    background-color: rgb(14 14 14 / 83%)    ;
+    display: flex;
+    align-items: flex-end;
+border-radius: 5px;
+padding-bottom: 0px;
+margin-bottom: 0px;
+backdrop-filter: blur(7px);
+  
+}
+a{
+    width: 67%;
+    display: inline;
+    text-align: center;
+ margin: 2px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+img{
+    width: 60%;
+    padding: 5px;
+    padding-bottom: 3px;
+}
+img:hover{
+    background-color: rgba(248, 248, 248, 0.317);
+    border-radius: 5px;
+}
+.big-icons
+{
+    width: 55%;
+}
+.last-icons{   height: 6vh;
+    margin-bottom: -4px;
+}
+.first-icon{
+    height: 4.7vh;
+}
+.vs-code{
+width: 56%;
+height:5.8vh;
+padding-top: 3px;
+
+}
+#start-menu-container{
+    min-height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+}
+#startmenu{
+    width: 41.5%;
+    height: 87vh;
+    padding: 10px;
+    border-radius: 13px;
+    display: none;
+    position: absolute;
+    background-color: rgba(32, 32, 32, 0.956);
+  /*  background-color: rgba(32, 32, 32, 0.853);*/
+    align-items: center;
+    justify-items: center;
+    align-content: space-evenly;
+
+    backdrop-filter: blur(20px);
+  /*  backdrop-filter: blur(2px);*/
+    margin-bottom: 25px;
+
+
+    
+}
+.toggle-style{
+    display: grid;
+
+}
+
+#startmenu.appear {
+    /* Define the animation properties */
+    animation: slideIn 0.2s forwards;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(100%); /* Start position: translate the element down by its own height */
+    }
+    to {
+      transform: translateY(0); /* End position: translate the element to its original position */
+    }
+  }
+
+  #startmenu.disappear {
+    /* Define the animation properties */
+    animation: slideOut 0.2s forwards;
+  }
+  @keyframes slideOut {
+    from {
+      transform: translateY(0); /* Start position: translate the element down by its own height */
+    }
+    to {
+      transform: translateY(100%); /* End position: translate the element to its original position */
+    }
+}
+  
+.start-menu-items{
+    
+    width: 90%;
+    height: 10vh;
+  
+}
+#search-bar{
+    width: 100%;
+ height: 5vh ;
+ display: flex;
+ margin-top: 23px;
+background-color: transparent;
+ flex-direction: row;
+ flex-wrap: wrap;
+ align-content:flex-start;
+ justify-content: center;
+ margin-bottom: 7px;
+}
+
+i{
+    position: relative;
+    left: 7%;
+    top: 82%;
+    color: white;
+}
+
+input{
+    width: 90%;
+    height: 4.5vh;
+    padding: 14px;
+    padding-left: 53px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(28, 30, 31);
+    border: 1px solid rgb(68 74 77);
+margin-top: 3.5%;
+outline: none;
+
+ 
+    
+}
+#start-menu-items-container{
+    height: 34vh;
+    margin: 23px 0px;
+    margin-top: 39px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    align-items: flex-end;
+}
+
+.menu-icon{
+    width: 60%;
+}
+
+
+.menu-icon:hover{
+background-color: transparent;
+
+}
+.icon-name{
+    color: white;
+    font-size: 12px;
+    display: block;
+    font-family:  sans-serif;
+    
+}
+
+#prime{
+    background: white;
+}
+.icon-link{
+    text-decoration: none;
+    width: 14%;
+    padding-bottom: 3px;
+  
+}
+.icon-link:hover{
+    border-radius: 5px;
+    background-color: rgba(248, 248, 248, 0.099);
+}
+#pinned{
+    width: 88%;
+    height: 4vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#Pin{
+    color: white;
+    font-size: 17px;
+
+}
+#youtube{
+    width: 65%;
+}
+#gmail{
+    width: 85%;
+}
+#All-apps{
+    font-size: 14px;
+    color: white;
+    background: #444b50c9;
+    padding: 5px 15px;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#recommended{
+    width: 95%;
+    height: 3vh;
+    display: flex;
+    margin-bottom: 9px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+#recommend{
+    color: white;
+    font-size: 17px;
+    position: relative;
+    
+    left: 5%;
+}
+#more{
+    font-size: 14px;
+    color: white;
+    background: #444b50c9;
+    padding: 5px 15px;
+    border-radius: 4px;
+    border: none; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#recent-opened{
+    margin-top: 12px;
+    margin-bottom: 16px;
+    height: 24.5vh;
+    display: flex;
+    background: red;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.recents{ 
+    width: 43%;
+    display: flex;
+    flex-flow: wrap;
+    place-content: space-between space-evenly;
+    position: relative;
+    left: 3%;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin-right: 19px;
+    padding: 5px;
+   
+}
+
+.recents:hover{
+    background-color: rgba(248, 248, 248, 0.099);
+    border-radius: 5px;
+}
+
+.recent-icons{
+    width: 20%;
+}
+.recent-icons:hover{
+    background: none;
+}
+
+.recent-names{
+    margin-left: 10px;
+    
+}
+.app-names{
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.partition{
+    display: flex;
+   font-size: 11px;
+    flex-direction: row;
+    letter-spacing: 0.5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+strong{
+    font-size: 15px;
+}
+
+#control-panel{
+    background-color: #00000066;
+    height: 7.3vh;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+   
+    width: 103.2%;
+    padding: 0px -14px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+#user-switch{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 8%
+}
+
+
+#name{
+    position: absolute;
+   
+    left: 15%;
+    color: white;
+    font-size: 15px;
+
+}
+
+#inside-block{display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    width: 140px;
+    padding: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 5px;
+    
+}
+
+#first-icon{
+    color: white;
+}
+#inside-block:hover{
+    background-color: rgba(248, 248, 248, 0.317);
+  
+   
+}
+#user-icon{
+    width:27px;
+    display: flex;
+    height: 3.5vh;
+    background-color:  white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60%;
+    color: black;
+    font-size: 13px;
+    margin-right: 3px;
+}
+#power{
+    position: absolute;
+    right: 7%;
+    padding: 9px;
+    padding-right: 11.5px;
+    border-radius: 4px;
+
+}
+
+#power:hover{
+    background-color: rgba(248, 248, 248, 0.317);
+}
+.user-account-items{
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    width: 34%;
+   
+    color: white;
+    background-color: #1e2024;
+    padding: 3px;
+    position: absolute;
+    bottom: 7.5%;
+    left: 4%;
+    box-shadow: 5px 20px 20px  #07070781;
+    border: 1px solid rgba(52, 57, 60, 0.331);
+opacity: 0;
+}
+.account-inside-items{
+    width: 97%;
+    height: 4vh;
+    padding: 3px 2px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    margin: 3px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.account-inside-items:hover{
+    background-color: rgba(248, 248, 248, 0.317);
+}
+.user-icon{
+    width:30px;
+    display: flex;
+    height: 3.5vh;
+   
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60%;
+    color: black;
+    font-size: 28px;
+
+}
+
+@keyframes slideInFromBottom {
+    from {
+      opacity: 0;
+      transform: translateY(10%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(-5%);
+    }
+  }
+  
+  /* Apply the animation to the element */
+  .user-account-items {
+    animation: slideInFromBottom 0.3s forwards;
+  }
+  #power-control-items
+{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 26%;
+    color: white;
+    background-color: #1e2024;
+    padding: 3px;
+    position: absolute;
+    bottom: 7.5%;
+   right: -1%;
+    box-shadow: 5px 20px 20px  #07070781;
+    border: 1px solid rgba(52, 57, 60, 0.331);
+
+}
+.power-inside-items
+{
+    width: 97%;
+    height: 4vh;
+    padding: 3px 2px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    margin: 3px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px 10px;
+   
+}
+
+#power-control-items
+{
+    animation: slideInFromBottom 0.3s forwards;
+}
+.power-inside-items:hover{
+    background-color: rgba(248, 248, 248, 0.317);
+}
+
+
+.power-icon
+{ color: white;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 20%;
+    padding-right: 7px;
+}
+.power-icon-names{
+    font-size: 16px;
+}
+
+    /*
+.icons{
+    width: 12%;
+    height: 7vh;
+    margin: 0 auto;
+    padding: 5px;
+    background: transparent;
+}
+
+
+.icons:hover{
+    background-color: #ffffff4b;
+    border-radius: 3px;
+}
+.big-icons{
+    height: 5vh;
+    width: 10%;
+}
+
+.first-icon{
+    
+    display: flex;
+    width: 10%;
+    height: 5vh;
+    /* column-gap: 6em; */
+   /* flex-direction: row;
+    flex-wrap: wrap;
+    /* align-content: center; 
+    justify-content: center;
+    align-items: center;
+}
+.last-icon{
+    height: 5.8vh;
+    width: 12%;
+   
+}
+.vs-code{
+    width: 12%;
+    height: 5.8vh;
+
+}
+*/
